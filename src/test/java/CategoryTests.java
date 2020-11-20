@@ -10,12 +10,12 @@ public class CategoryTests {
 
     @Test
     public void testID1() {
-        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
 
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
 
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
@@ -38,11 +38,11 @@ public class CategoryTests {
     public void testID1_1() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
 
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
@@ -65,10 +65,10 @@ public class CategoryTests {
     public void testID2() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
 
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
@@ -91,11 +91,11 @@ public class CategoryTests {
     public void testID2_1() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
 
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
@@ -118,10 +118,10 @@ public class CategoryTests {
     public void testID3() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
 
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
@@ -144,10 +144,10 @@ public class CategoryTests {
     public void testID3_1() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
 
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
@@ -170,10 +170,10 @@ public class CategoryTests {
     public void testID4() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
 
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
@@ -196,9 +196,10 @@ public class CategoryTests {
     public void testID4_1() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments( "--no-sandbox", "--headless", "--disable-gpu");
+
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://healthunify.com/bmicalculator/");
 
         WebElement weightField = driver.findElement(By.name("wg"));
