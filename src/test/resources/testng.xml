@@ -1,0 +1,7 @@
+<suite name="TestSuite">
+    <test name="CalcTest">
+        <classes>
+            <class name="CategoryTests" />
+        </classes>
+    </test>
+</suite>
