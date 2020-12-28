@@ -6,7 +6,7 @@ version: 2
 jobs:
   ui-tests:
     docker:
-      - image: cimg/openjdk:14.0
+      - image: 14.0.2-jdk-buster-browsers
     working_directory: ~/repo
     environment:
     # get from git and get maven dependencies
