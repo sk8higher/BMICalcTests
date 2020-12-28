@@ -6,7 +6,7 @@ version: 2
 jobs:
   ui-tests:
     docker:
-      - image: circleci/openjdk:14.0-browsers
+      - image: cimg/openjdk:14.0
     working_directory: ~/repo
     environment:
     # get from git and get maven dependencies
